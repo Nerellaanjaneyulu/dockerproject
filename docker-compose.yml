@@ -3,27 +3,27 @@ services:
   devops:
     image: anjaneyulu02/devopsreponit:latest
     ports:
-      - "91:80"
+      - "95:80"
     deploy:
       replicas: 3
 
   azure:
     image: anjaneyulu02/azurereponit:latest
   ports:
-    - "92:80"
+    - "96:80"
   deploy:
     replicas: 3
 
   aws:
     image: anjaneyulu02/awsreponit:latest
   ports:
-    - "93:80"
+    - "97:80"
   deploy:
     replicas: 3
 
   datascience:
     image: anjaneyulu02/datascience:latest
   ports:
-    - "94:80"
+    - "98:80"
   deploy:
     replicas: 3
